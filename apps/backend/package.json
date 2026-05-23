@@ -5,8 +5,12 @@
   "author": "",
   "private": true,
   "license": "UNLICENSED",
+  "prisma": {
+    "seed": "node dist/prisma/seed.js"
+  },
   "scripts": {
     "build": "nest build",
+    "db:seed": "nest build && node dist/prisma/seed.js",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
