@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "pnpm -r --parallel dev",
     "build": "pnpm -r build",
     "postinstall": "pnpm rebuild better-sqlite3",
     "format": "prettier --write .",

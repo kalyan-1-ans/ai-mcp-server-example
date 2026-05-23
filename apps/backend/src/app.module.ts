@@ -8,10 +8,18 @@ import { SprintController } from './sprint/sprint.controller';
 import { SprintService } from './sprint/sprint.service';
 import { TicketController } from './ticket/ticket.controller';
 import { TicketService } from './ticket/ticket.service';
+import { UserController } from './user/user.controller';
+import { UserService } from './user/user.service';
 
 @Module({
   imports: [],
-  controllers: [AppController, ProjectController, SprintController, TicketController],
-  providers: [AppService, PrismaService, ProjectService, SprintService, TicketService],
+  controllers: [
+    AppController,
+    ProjectController,
+    SprintController,
+    TicketController,
+    UserController,
+  ],
+  providers: [AppService, PrismaService, ProjectService, SprintService, TicketService, UserService],
 })
 export class AppModule {}
